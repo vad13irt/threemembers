@@ -1,0 +1,334 @@
+@import "nullstyles";
+@import "header";
+@import "footer";
+@import "config";
+
+article {
+    min-height: 100%;
+    margin-top: 75px;
+}
+
+.block {
+    padding: 100px 0;
+}
+
+.present {
+    height: 100vh;
+    padding: 50px 0;
+    @include background-image("../images/index/01-mercedes-benz-all-time-stars-concours-edition-cars-300-sl-1700x720.jpeg");
+}
+
+.items {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.present__imgblock {
+    padding: 25px;
+    border: 2.5px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.present__image {
+    width: 75px;
+}
+
+.present__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.present__logo {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.present__repair {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 20px;
+}
+
+.socials {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 10px 5px;
+}
+
+
+
+.services {
+    @include background-image("../images/index/16478.jpg");
+}
+
+.services__items {
+    justify-content: space-evenly;
+    min-height: 450px;
+}
+
+.services__container {
+    max-width: 850px;
+}
+
+.title {
+    color: #fff;
+    font-size: 32.5px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.services__services {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services__service {
+    width: 200px;
+    height: 300px;
+    margin: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services__image {
+    height: 45%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.services__name {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.services__description {
+    text-align: center;
+    font-size: 13.5px;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+.works {
+    background-color: #fff;
+    padding: 25px 0;
+}
+
+.works__title {
+    color: #000;
+}
+
+.works__items {
+    justify-content: space-evenly;
+    min-height: 1000px;
+}
+
+.description-text {
+    color: grey;
+    font-size: 17.5px;
+    letter-spacing: 2px;
+}
+
+.works__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.works__image {
+    width: 400px;
+    height: 350px;
+    transition-duration: 1s;
+}
+
+.works__container {
+    max-width: 1200px;
+}
+
+.about {
+    background-image: url("../images/index/isometric-pattern-cubes-seamless-linear-background-delicate-lines-black-white-geometric-contemporary-ornament-68177476.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.about__container {
+    max-width: 700px;
+}
+.about__items {
+    padding: 75px 75px;
+    background-color: #fff;
+}
+
+.about__title {
+    color: #000;
+}
+
+.about__text {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    letter-spacing: 1.5px;
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.empty {
+    min-height: 500px;
+    @include background-image("../images/index/photo-1477959858617-67f85cf4f1df.jpg");
+}
+
+.feedback  {
+    background-image: url("../images/index/isometric-pattern-cubes-seamless-linear-background-delicate-lines-black-white-geometric-contemporary-ornament-68177476.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.feedback__items {
+    min-height: 400px;
+    justify-content: space-evenly;
+}
+
+.feedback__item:last-child {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.feedback__dataitems {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.feedback__dataitem {
+    align-items: stretch;
+    height: 100%;
+    width: 50%;
+}
+
+.feedback__datas {
+    min-height: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feedback__singledatas {
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feedback__data {
+    color: #2F2E2E;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.feedback__input {
+    width: 100%;
+    padding: 5px 25px;
+    border: 1px solid #7a7a7a;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 10px;
+    &:hover {
+        border: 1px solid #000;
+    }
+    &:focus {
+        border: 1px solid #000;
+        border-radius: 0px;
+    }
+}
+
+
+.feedback__message {
+    min-height: 125px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 125px;
+}
+
+.footer__send {
+    font-size: 15px;
+    padding: 10px 25px;
+    background-color: #000;
+    color: #fff;
+    border: 0px;
+    transition-duration: 1s;
+    &:hover {
+        transition-duration: 1s;
+        border: 0px;
+        background-color: #7a7a7a;
+    }
+}
+
+.feedback__times {
+    min-height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feedback__timetitle {
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.feedback__hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__hour {
+    margin-bottom: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.feedback__hour:last-child {
+    margin-bottom: 0;
+}

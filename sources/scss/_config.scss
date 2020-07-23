@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto/Roboto-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto/Roboto-Bold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+$background-color: #2F2E2E;
+$btn-hover-background-color: #7a7a7a;
+
+@mixin background-image($image) {
+    background-image: url($image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -1,0 +1,18 @@
+@import "config";
+
+
+.footer {
+    height: 150px;
+    background-color: $background-color;
+}
+
+.footer__items {
+    padding: 50px 0;
+    justify-content: space-evenly;
+}
+
+.footer__copyright {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 12.5px;
+}

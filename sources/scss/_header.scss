@@ -1,0 +1,32 @@
+@import "config";
+
+
+.header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    background-color: $background-color;
+}
+
+.header__links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition-duration: 1s;
+    &:hover {
+        transition-duration: 1s;
+        transition-property: color;
+        color: $btn-hover-background-color;
+    }
+}
+
+.header__link_this {
+    @extend .header__link;
+    color: $btn-hover-background-color;
+}
